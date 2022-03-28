@@ -58,4 +58,15 @@ public class Person {
     public void setType(String type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", idNumber=" + idNumber +
+                ", type='" + type + '\'' +
+                '}';
+    }
 }
