@@ -34,6 +34,6 @@ public class Main {
 
         Singleton sing1;
 
-        
+
     }
 }
