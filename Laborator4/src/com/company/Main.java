@@ -23,6 +23,13 @@ public class Main {
 
         t3.execute();
 
+        Container c1 = new Container();
+
+        c1.add(t1);
+        c1.add(t2);
+
+        c1.remove(t1);
+        
         Operation op = new Operation(1);
 
         op.add(1);
