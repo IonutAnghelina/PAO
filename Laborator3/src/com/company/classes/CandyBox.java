@@ -1,5 +1,7 @@
 package com.company.classes;
 
+import java.util.Objects;
+
 public abstract class CandyBox {
 
 
@@ -24,4 +26,14 @@ public abstract class CandyBox {
                 ", origin='" + origin + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CandyBox candyBox = (CandyBox) o;
+        return Objects.equals(flavor, candyBox.flavor) && Objects.equals(origin, candyBox.origin);
+    }
+
+
 }

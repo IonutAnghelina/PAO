@@ -1,5 +1,7 @@
 package com.company.classes;
 
+import java.util.Objects;
+
 public class Merci extends CandyBox {
 
 
@@ -35,4 +37,15 @@ public class Merci extends CandyBox {
     public String toString() {
         return "The " + origin + " " + flavor + " has volume " + this.getVolume();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Merci merci = (Merci) o;
+        return length == merci.length;
+    }
+
+
 }

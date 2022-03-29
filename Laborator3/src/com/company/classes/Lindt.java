@@ -1,5 +1,7 @@
 package com.company.classes;
 
+import java.util.Objects;
+
 public class Lindt extends CandyBox{
 
 
@@ -56,6 +58,16 @@ public class Lindt extends CandyBox{
     @Override
     public String toString() {
         return "The " + origin + " " + flavor + " has volume " + this.getVolume();
+    }
+
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Lindt lindt = (Lindt) o;
+        return length == lindt.length && width == lindt.width && height == lindt.height;
     }
 
 
