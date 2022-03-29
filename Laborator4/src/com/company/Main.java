@@ -22,5 +22,29 @@ public class Main {
         t3.execute();
 
         t3.execute();
+
+        Operation op = new Operation(1);
+
+        op.add(1);
+
+        System.out.println(op.getTerm());
+
+        op.substract(1);
+
+        System.out.println(op.getTerm());
+
+        op.multiply(10);
+
+        System.out.println(op.getTerm());
+
+        op.divide(2);
+
+        System.out.println(op.getTerm());
+
+        op.divide(0);
+
+        System.out.println(op.getTerm());
+
+
     }
 }
