@@ -85,5 +85,11 @@ public class Main {
             if (flag == true)
                 System.out.println("The 2 strings are anagrams");
         }
+
+        PasswordMaker p1 = PasswordMaker.getInstance("Ionut");
+
+
+        System.out.println("The generated password is:");
+        System.out.println(p1.getPassword());
     }
 }
